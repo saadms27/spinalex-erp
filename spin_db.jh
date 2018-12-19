@@ -1,0 +1,23 @@
+entity PyPersDa {
+	empNo String
+    uUCd Long
+    sitCd Long
+}
+
+entity PyUnitCd{
+	uCd Long
+    uNm String
+}
+
+relationship OneToOne{
+	PyPersDa{uUCd} to PyUnitCd{uCd}
+}
+
+entity PySituat{
+	sitCd Long
+    sitNm String
+}
+
+relationship OneToOne{
+	PyPersDa{sitCd} to PySituat{sitCd}
+}

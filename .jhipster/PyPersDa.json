@@ -1,0 +1,44 @@
+{
+    "name": "PyPersDa",
+    "fields": [
+        {
+            "fieldName": "empNo",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "uUCd",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "sitCd",
+            "fieldType": "Long"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "uUCd",
+            "otherEntityName": "pyUnitCd",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "uCd"
+        },
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "sitCd",
+            "otherEntityName": "pySituat",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "sitCd"
+        }
+    ],
+    "changelogDate": "20181219190628",
+    "entityTableName": "py_pers_da",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}
