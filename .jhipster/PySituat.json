@@ -1,0 +1,31 @@
+{
+    "name": "PySituat",
+    "fields": [
+        {
+            "fieldName": "sitCd",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "sitNm",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "sitCd",
+            "otherEntityName": "pyPersDa",
+            "ownerSide": false,
+            "otherEntityRelationshipName": "sitCd"
+        }
+    ],
+    "changelogDate": "20181219190630",
+    "entityTableName": "py_situat",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

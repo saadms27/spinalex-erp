@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+    <!--
+        Added the constraints for entity PyPersDa.
+    -->
+    <changeSet id="20181219190628-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="uucd_id"
+                                 baseTableName="py_pers_da"
+                                 constraintName="fk_py_pers_da_uucd_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="py_unit_cd"/>
+
+        <addForeignKeyConstraint baseColumnNames="sit_cd_id"
+                                 baseTableName="py_pers_da"
+                                 constraintName="fk_py_pers_da_sit_cd_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="py_situat"/>
+
+    </changeSet>
+</databaseChangeLog>

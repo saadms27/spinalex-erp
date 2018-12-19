@@ -1,0 +1,31 @@
+{
+    "name": "PyUnitCd",
+    "fields": [
+        {
+            "fieldName": "uCd",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "uNm",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "uCd",
+            "otherEntityName": "pyPersDa",
+            "ownerSide": false,
+            "otherEntityRelationshipName": "uUCd"
+        }
+    ],
+    "changelogDate": "20181219190629",
+    "entityTableName": "py_unit_cd",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}
